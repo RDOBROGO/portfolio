@@ -1,0 +1,108 @@
+nav {
+    background-color: var(--main-color);
+    padding: 30px;
+}
+
+nav .container {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav .container a {
+    color: white;
+    text-decoration: none;
+}
+
+nav h1 {
+    width: auto;
+    text-align: left;
+    font-weight: 700;
+}
+
+.menu-button {
+    display: block;
+    width: 2.2rem;
+    height: 2rem;
+    background-color: unset;
+    background-image: url('./dotsMenu.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu-items {
+    position: absolute;
+    top: 105px;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    background-color: var(--main-color);
+    font-weight: 700;
+    color: white;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.mobile-menu-items__item{
+    padding: 10px 30px;
+    border-top: 2px solid white;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.mobile-menu-items h2{
+    padding: 1px 0 1px 0;
+    transition: .6s;
+}
+
+.mobile-menu-items h2:hover{
+    transform: translateX(10px);
+    font-size: 2.2rem;
+}
+
+.menu-items {
+    display: none;
+    justify-content: space-between;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.menu-items h2 {
+    margin-right: 40px;
+}
+
+.menu-items h2:last-child {
+    margin-right: 0px;
+}
+
+@media(min-width: 1024px){
+    .menu-button {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .menu-items h2 a {
+        font-size: 2.5rem;
+    }
+
+    .mobile-menu-items h2:hover{
+        transform: translateX(10px);
+        font-size: 2.7rem;
+    }
+}
+@media(min-width: 1440px){
+    .menu-items {
+        display: flex;
+    }
+
+    .menu-button {
+        display: none;
+    }
+}

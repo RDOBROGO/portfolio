@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/App.css" rel="stylesheet" type="text/css">
+    <title>Portfolio: Radosław Dobrogojski</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="/"><h1>Home</h1></a>
+            <button aria-label="expand the menu" id="menuButton" class="menu-button"></button>
+            <div id="menuItems" class="menu-items">
+                <h2><a href="#portfolio">Portfolio</a></h2>
+                <h2><a href="#cv">Curriculum vitae</a></h2>
+                <h2><a href="#links">Linki</a></h2>
+                <h2><a href="#contact">Kontakt</a></h2>
+            </div>
+            <div id="mobileMenuItems" class="mobile-menu-items">
+                <a href="#portfolio"><div class="mobile-menu-items__item"><h2 class="mobile-menu-items__item">Portfolio</h2></div></a>
+                <a href="#cv"><div class="mobile-menu-items__item"><h2>Curriculum vitae</h2></div></a>
+                <a href="#links"><div class="mobile-menu-items__item"><h2>Linki</h2></div></a>
+                <a href="#contact"><div class="mobile-menu-items__item"><h2>Kontakt</h2></div></a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="landing-page">
+            <div class="background-gray"></div>
+            <div class="container">
+                <div class="my-photo">
+                    <div class="my-photo-in">
+                        <!-- <img /> -->
+                    </div>
+                </div>
+                <div class="introduction">
+                    <h1>Witam na mojej stronie</h1>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="container">
+                <div class="down-arrow-box"><img class="down-arrow" src="./src/down-arrow.svg" alt="down-arrow" /></div>
+                <a name="portfolio"></a>
+                <h1>Portfolio</h1>
+                <div class="portfolio-items">
+                    <div class="portfolio-items__item item-first">
+                        <div class="portfolio-items__item__shadow"><h2>Superbohaterowie</h2></div>
+                        <a href="#"><div aria="HeroApi" class="portfolio-items__item__content"></div></a>
+                    </div>
+                    
+                    <div class="portfolio-items__item item-second" >
+                        <div class="portfolio-items__item__shadow"><h2>Wyszukiwarka filmów</h2></div>
+                        <a href="#"><div aria="TvMaze" class="portfolio-items__item__content"></div></a>
+                    </div>
+                    <div class="portfolio-items__item item-third" >
+                        <div class="portfolio-items__item__shadow"><h2>Aplikacja pogodowa</h2></div>
+                        <a href="#"><div aria="WeatherApp" class="portfolio-items__item__content"></div></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cv">
+            <div class="container">
+                <div class="down-arrow-box"><img class="down-arrow" src="./src/down-arrow.svg" alt="down-arrow" /></div>
+                <a name="cv"></a>
+                <h1>Curriculum vitae</h1>
+                <div class="cv__section cv__section__education">
+                    <div class="cv__section__image cv__section__education__image"></div>
+                    <h2 class="cv__section__education__title">Wykrztałcenie</h2>
+
+                    <div class="cv__section__place cv__section__place__study">
+                        <h3>Wyższa Szkoła Bankowa</h3>
+                        <h4>Informatyka</h4> <p>2019-</p>
+                        <h5>Niestacjonarnie</h5>
+                    </div>
+
+                    <div class="cv__section__place cv__section__place__tech">
+                        <h3>Technikum Komunikacji – Zespół Szkół Komunikacji</h3>
+                        <h4>Technik informatyk</h4>
+                        <p>2014 – 2018</p>
+                        <div class="cv__section__place__qualifications">
+                            <h4>Kwalifikacje</h4>
+                            <h5>E.12.</h5><p>80% - część pisemna,</p><p> 97% - część praktyczna</p>
+                            <h5>E.13.</h5><p>63% - część pisemna,</p><p>100% - część praktyczna</p>
+                            <h5>E.14.</h5><p>80% - część pisemna,</p><p>95% - część praktyczna</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cv__section cv__section__work">
+                    <div class="cv__section__image"><img class="cv__section__work__image" src="./src/work.svg" alt="work image"></div>
+                    <h2 class="cv__section__work__title">Doświadczenie zawodowe</h2>
+                    
+                    <div class="cv__section__place cv__section__place__tdc">
+                        <h3>TDC Polska</h3>
+                        <h4>Serwisant, praktykant</h4>
+                        <p>2017</p>
+                    </div>
+                    <div class="cv__section__place cv__section__place__nexotech">
+                        <h3>NexoTech S.A.</h3>
+                        <h4>Technik, monter sieci światłowodowych</h4>
+                        <p>2020-2021</p>
+                    </div>
+                    <div class="cv__section__place cv__section__place__other">
+                        <p class="single-para">Prace dorywcze np. praca w zakładzie stolarskim,
+                             budowa stoisk targowych za granicą, renowacja mebli zabytkowych
+                        </p>
+                    </div>
+                </div>
+                <div class="cv__section__other">
+                    <div class="cv__section">
+                        <h2>Dodatkowe informacje</h2>
+                        <div class="cv__section__place">
+                            <ul>
+                                <li>Prawo jazdy kat. B</li>
+                                <li>Znajomość HTML5</li>
+                                <li>Znajomość CSS3</li>
+                                <li>Znajomość JavaScript</li>
+                                <li>Umiejętność samodzielnej organizacji pracy</li>
+                                <li>Dyspozycyjność</li>
+                                <li>Zapał do pracy</li>
+                                <li>Sumienność i poważne podejście do pracy</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cv__section">
+                        <h2>Zainteresowania</h2>
+                        <div class="cv__section__place">
+                            <ul>
+                                <li>Informatyka</li>
+                                <li>Programowanie</li>
+                                <li>Technologiczne nowinki</li>
+                                <li>Motoryzacja</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="links">
+            <div class="container">
+                <div class="down-arrow-box"><img class="down-arrow" src="./src/down-arrow.svg" alt="down-arrow" /></div>
+                <a name="links"></a>
+                <h1>Linki</h1>
+                <div class="links__content">
+                    <div class="links__content__rep">
+                        <p>Moje repozytorium</p>
+                        <a href="https://github.com/RDOBROGO?tab=repositories">
+                            <img class="links-image" src="./src/repository.svg" alt="my repository">
+                        </a>
+                    </div>
+                    <div class="links__content__linkedin">
+                        <p>LinkedIn</p>
+                        <a href="https://www.linkedin.com/in/rados%C5%82aw-dobrogojski-45a1401aa/">
+                            <img class="links-image" src="./src/linkedin.svg" alt="my linkedIn">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <div class="down-arrow-box"><img class="down-arrow" src="./src/down-arrow.svg" alt="down-arrow" /></div>
+                <a name="contact"></a>
+                <h1>Kontakt</h1>
+                <div class="contact__content">
+                    <div class="contact__content__text">
+                        <p>Tel: 516 183 547</p>
+                        <p>E-mail: dobrogojskiradoslaw@gmail.com</p>
+                    </div>
+                    <div class="contact__content__links">
+                        <a href="tel:+48516184547"><img id="phone" class="contact__content__phone" src="./src/phone-call.svg" alt="call me"></a>
+                        <a href="mailto:dobrogojskiradoslaw@gmail.com"><img class="contact__content__mail" src="./src/mail-send.svg" alt="mail me"></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer><p>Autor strony: Radosław Dobrogojski</p></footer>
+    <script src="./src/App.js"></script>
+</body>
+</html>
