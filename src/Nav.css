@@ -21,16 +21,12 @@ nav h1 {
     font-weight: 700;
 }
 
-.menu-button {
+.btn-menu {
     display: block;
     width: 2.2rem;
     height: 2rem;
-    background-color: unset;
     background-image: url('./dotsMenu.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: none;
-    cursor: pointer;
+
 }
 
 .mobile-menu-items {
@@ -83,7 +79,7 @@ nav h1 {
 }
 
 @media(min-width: 1024px){
-    .menu-button {
+    .btn-menu {
         width: 2rem;
         height: 2rem;
     }
@@ -102,7 +98,7 @@ nav h1 {
         display: flex;
     }
 
-    .menu-button {
+    .btn-menu {
         display: none;
     }
 }

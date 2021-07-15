@@ -8,10 +8,14 @@
     <title>Portfolio: Radosław Dobrogojski</title>
 </head>
 <body>
+    <div id="certificateBox" class="certificate-box">
+        <button id="btnCertificateExit" class="btn btn-certificate-exit"></button>
+        <div id="certificateBoxImage" class="certificateBox__image"></div>
+    </div>
     <nav>
         <div class="container">
             <a href="/"><h1>Home</h1></a>
-            <button aria-label="expand the menu" id="menuButton" class="menu-button"></button>
+            <button aria-label="expand the menu" id="menuButton" class="btn btn-menu"></button>
             <div id="menuItems" class="menu-items">
                 <h2><a href="#portfolio">Portfolio</a></h2>
                 <h2><a href="#cv">Curriculum vitae</a></h2>
@@ -19,7 +23,7 @@
                 <h2><a href="#contact">Kontakt</a></h2>
             </div>
             <div id="mobileMenuItems" class="mobile-menu-items">
-                <a href="#portfolio"><div class="mobile-menu-items__item"><h2 class="mobile-menu-items__item">Portfolio</h2></div></a>
+                <a href="#portfolio"><div class="mobile-menu-items__item"><h2>Portfolio</h2></div></a>
                 <a href="#cv"><div class="mobile-menu-items__item"><h2>Curriculum vitae</h2></div></a>
                 <a href="#links"><div class="mobile-menu-items__item"><h2>Linki</h2></div></a>
                 <a href="#contact"><div class="mobile-menu-items__item"><h2>Kontakt</h2></div></a>
@@ -49,18 +53,17 @@
                 <h1>Portfolio</h1>
                 <div class="portfolio-items">
                     <div class="portfolio-items__item item-first">
-                        <div class="portfolio-items__item__shadow"><h2>Superbohaterowie</h2></div>
-                        <a href="#"><div aria="HeroApi" class="portfolio-items__item__content"></div></a>
+                        <a href="/heroapi"><div class="portfolio-items__item__shadow"><h2>Superbohaterowie</h2></div></a>
+                        <div aria="HeroApi" class="portfolio-items__item__content"></div>
                     </div>
                     
                     <div class="portfolio-items__item item-second" >
-                        <div class="portfolio-items__item__shadow"><h2>Wyszukiwarka filmów</h2></div>
-                        <a href="#"><div aria="TvMaze" class="portfolio-items__item__content"></div></a>
+                        <a href="/TVApp"><div class="portfolio-items__item__shadow"><h2>Wyszukiwarka filmów</h2></div></a>
+                        <div aria="TvMaze" class="portfolio-items__item__content"></div>
                     </div>
                     <div class="portfolio-items__item item-third" >
-                        <div class="portfolio-items__item__shadow"><h2>Aplikacja pogodowa</h2></div>
-                        <a href="#"><div aria="WeatherApp" class="portfolio-items__item__content"></div></a>
-                    </div>
+                        <a href="/weatherapp"><div class="portfolio-items__item__shadow"><h2>Aplikacja pogodowa</h2></div></a>
+                        <div aria="WeatherApp" class="portfolio-items__item__content"></div>
                 </div>
             </div>
         </section>
@@ -82,14 +85,21 @@
                     <div class="cv__section__place cv__section__place__tech">
                         <h3>Technikum Komunikacji – Zespół Szkół Komunikacji</h3>
                         <h4>Technik informatyk</h4>
-                        <p>2014 – 2018</p>
-                        <div class="cv__section__place__qualifications">
-                            <h4>Kwalifikacje</h4>
+                            <p>2014 – 2018</p>
+                        <h4>Kwalifikacje</h4>
                             <h5>E.12.</h5><p>80% - część pisemna,</p><p> 97% - część praktyczna</p>
                             <h5>E.13.</h5><p>63% - część pisemna,</p><p>100% - część praktyczna</p>
                             <h5>E.14.</h5><p>80% - część pisemna,</p><p>95% - część praktyczna</p>
-                        </div>
                     </div>
+                    <div class="cv__section__place cv__section__place__qualifications">
+                        <h4>Certyfikaty</h4>
+                            <h3>Google</h3>
+                            <p>Podstawy marketingu internetowego <button class="btn btn-qualifi" file="google"></button></p>
+                            <h3>Zawodowy</h3>
+                            <p>Technik informatyk <button class="btn btn-qualifi" file="technique"></button></p>
+                            <p>Supplement <button class="btn btn-qualifi" file="supplement"></button></p>
+                    </div>
+                        
                 </div>
                 <div class="cv__section cv__section__work">
                     <div class="cv__section__image"><img class="cv__section__work__image" src="./src/work.svg" alt="work image"></div>
